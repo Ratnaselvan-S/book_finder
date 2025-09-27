@@ -66,10 +66,8 @@ const BookDetails = () => {
 
   return (
     <div className="max-w-4xl mx-auto p-6">
-      {/* Title */}
       <h1 className="text-3xl font-bold mb-2 text-center">{data.title}</h1>
 
-      {/* Authors */}
       {authors.length > 0 && (
         <p className="text-lg text-gray-700 text-center mb-6">
           by{" "}
@@ -82,7 +80,6 @@ const BookDetails = () => {
         </p>
       )}
 
-      {/* Covers */}
       {!covers ? (
         <p className="text-center text-gray-500 animate-pulse mb-6">
           Loading covers...
@@ -99,7 +96,7 @@ const BookDetails = () => {
           ))}
         </div>
       )}
-      {/* Subjects */}
+
       {data.subjects && (
         <div className="mb-6">
           <h2 className="text-xl font-semibold mb-2">Subjects</h2>
@@ -117,7 +114,6 @@ const BookDetails = () => {
       )}
       {data.description && (
         <div className="mt-6 p-4 border rounded-lg shadow-sm bg-white">
-          {/* Description */}
           {data.description && (
             <div>
               <h3 className="font-bold">Description:</h3>
@@ -128,8 +124,6 @@ const BookDetails = () => {
               </p>
             </div>
           )}
-
-          {/* eBook / Read Link */}
         </div>
       )}
       <div>
@@ -167,53 +161,3 @@ const BookDetails = () => {
 };
 
 export default BookDetails;
-
-// {
-//     "title": "The art of money getting, or, Golden rules for money getting",
-//     "subjects": [
-//         "Success",
-//         "Finance",
-//         "Nonfiction",
-//         "Self-Improvement",
-//         "Success in business",
-//         "Finance, personal",
-//         "Income",
-//         "Commerce",
-//         "Business",
-//         "Self-help techniques"
-//     ],
-//     "key": "/works/OL891636W",
-//     "authors": [
-//         {
-//             "type": {
-//                 "key": "/type/author_role"
-//             },
-//             "author": {
-//                 "key": "/authors/OL78901A"
-//             }
-//         }
-//     ],
-//     "type": {
-//         "key": "/type/work"
-//     },
-//     "covers": [
-//         756095,
-//         9106530,
-//         9178457,
-//         9216725,
-//         13333475,
-//         11996932,
-//         12528100,
-//         13892650
-//     ],
-//     "latest_revision": 4,
-//     "revision": 4,
-//     "created": {
-//         "type": "/type/datetime",
-//         "value": "2009-12-09T06:47:49.076810"
-//     },
-//     "last_modified": {
-//         "type": "/type/datetime",
-//         "value": "2024-08-17T21:16:35.458226"
-//     }
-// }
