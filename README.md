@@ -37,7 +37,7 @@ API: Open Library API
 
 Build Tool: CRA
 
-📂 Project Setup
+Project Setup
 Clone the repository
 git clone https://github.com/your-username/book_finder.git
 cd book_finder
